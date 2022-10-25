@@ -1,0 +1,43 @@
+@use "../../Foundation/variable" as *;
+
+.c-contact-form {
+    display: block;
+    justify-content: center;
+    margin: 40px 0;
+
+    input {
+        height: 50px;
+        min-width: 270px;
+        border: 1px solid $navy;
+        margin-bottom: 40px;
+        width: 100%;
+
+    }
+
+    textarea {
+        border: 1px solid $navy;
+        width: 100%;
+        @include breakpoint(tablet){
+            min-width: 408px;
+
+        }
+    }
+
+    label {
+        margin-top: 40px;
+        font-size: 18px;
+        @include breakpoint(tablet){
+            font-size: 24px;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        input {
+            width: 440px;
+        }
+
+        textarea {
+            width: 440px;
+        }
+    }
+}
